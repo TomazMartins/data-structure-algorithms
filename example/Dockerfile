@@ -11,7 +11,7 @@ COPY . /usr/src/dsa/example/app
 WORKDIR /usr/src/dsa/example/app
 
 # This command compiles your app using GCC, adjust for your source code
-RUN g++ -o app main.cpp
+RUN g++ -o app src/main.cpp
 
 # This command runs your application, comment out this line to compile only
 CMD ["./app"]
